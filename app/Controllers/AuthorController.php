@@ -3,12 +3,9 @@
 namespace HerbertExtraDemo\Controllers;
 
 use Axoloth\HerbertExtra\Controllers\ExtraController;
-use Axoloth\HerbertExtra\Http\ExtraHttp;
 use Herbert\Framework\Http;
 use HerbertExtraDemo\Models\Entity\Author;
 use HerbertExtraDemo\Models\Form\AuthorForm;
-use Symfony\Component\Validator\Validation;
-use Symfony\Component\VarDumper\VarDumper;
 
 
 class AuthorController extends ExtraController{

@@ -24,37 +24,36 @@ class Author{
 	public $id;
 	
 	/**
-	 * @ORM\Column(type="string", length=100)
+	 * @ORM\Column 
+	 * @Assert\Length(
+     *      min = 2,
+     *      max = 100
+     * )
 	 */
 	protected $name;
 	
 	/**
-	 * @ORM\Column(type="string", length=100)
-     * Assert\Email()
+	 * @ORM\Column 
+	 * @Assert\Length(
+     *      min = 2,
+     *      max = 100
+     * )
 	 */
 	protected $firstName;
 	
 	/**
 	 * @ORM\Column(type="date", length=100)
-	 * 
+	 * @Assert\Date()
 	 */
 	protected $dateNaissance;
 	
 	/**
 	 * @ORM\Column(type="integer")
+	 * @Assert\Type(type="digit")
      */
 	protected $nbBook;
 	
 	
-	
-	public static function loadValidatorMetadata(ClassMetadata $metadata){
-		$metadata->addPropertyConstraint('name', new Assert\NotBlank());
-		// And a valid name is 5-50 characters long
-		$metadata->addPropertyConstraint('name', new Assert\Length(
-				array('min' => 5, 'max' => 50)
-				));
-		// Add more rules here as needed.
-	}
 	
 	
 	public function getId() {
