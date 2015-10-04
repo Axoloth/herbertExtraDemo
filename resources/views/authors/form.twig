@@ -1,0 +1,17 @@
+{% extends "@HerbertExtraDemo/layout.twig" %}
+
+{% block body %}
+{% trans %}Symfony2 is great{% endtrans %}
+
+{{ 'Symfony2 is great'|trans }}
+
+{{ 'Symfony2 is great'|transchoice(1) }}
+
+{% transchoice 1 %}Symfony2 is great{% endtranschoice %}
+	{%  if msg %}
+		{{ msg|raw }}
+	{%  endif %}
+{{ form_start(form) }}
+{{ form_widget(form) }}
+{{ form_end(form) }}
+{% endblock %}

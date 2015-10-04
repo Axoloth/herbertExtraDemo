@@ -1,0 +1,29 @@
+{% extends "@HerbertExtraDemo/layout.twig" %}
+{% block body %}
+
+	<form id="FormlistAuthors" action="" method="POST">
+		<input type="hidden" name="page" value="{{ page }}"/>
+		<input id="id" type="hidden" name="id" value=""/>
+
+	</form>
+	<h1>List of authors</h1>
+	
+	<br/><br/><br/><br/>
+	<ul>
+		{% for author in authors %}
+			<li>{{ author.name }} {{ author.firstName }}<a href="Javascript:FormListAuthors_edit({{ author.id }});">Edit POST</a><a href="/askEditAuthor/{{ author.id }}">Edit GET</a></li>
+		{% else %}
+			No autor !
+		{% endfor %}
+	</ul>
+	<br/><br/><br/><br/>
+
+    
+    <script>
+    	FormListAuthors_edit=function(id){
+			jQuery('#id').val(id);
+			jQuery('#FormlistAuthors').attr("action", '/editAuthor');
+			jQuery('#FormlistAuthors').submit();
+    	}
+    </script>
+{% endblock %}

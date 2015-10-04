@@ -1,0 +1,30 @@
+{% block header %}
+	{{ header() }}
+{% endblock %}
+
+<div id="main" class="site-main">
+
+	<div id="main-content" class="main-content">
+
+		<div id="primary" class="content-area">
+			<div id="content" class="site-content" role="main">
+					{% block body %}{% endblock %}
+			</div>
+		</div>
+
+	</div>
+
+	<div id="secondary">
+		<h2 class="site-description">Un site utilisant WordPress</h2>
+	
+		<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+			{% block sidebar %}
+				{{ sidebar() }}
+			{% endblock %}
+		</div>
+	</div>
+
+</div>
+{% block footer %}
+	{{ footer() }}
+{% endblock %}		

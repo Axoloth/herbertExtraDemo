@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<libraryInfos>
+<libraryInfo home="C:\eclipse-luna" version="1.8.0_51">
+<bootpath>
+<entry path="C:\eclipse-luna\jre\lib\resources.jar"/>
+<entry path="C:\eclipse-luna\jre\lib\rt.jar"/>
+<entry path="C:\eclipse-luna\jre\lib\sunrsasign.jar"/>
+<entry path="C:\eclipse-luna\jre\lib\jsse.jar"/>
+<entry path="C:\eclipse-luna\jre\lib\jce.jar"/>
+<entry path="C:\eclipse-luna\jre\lib\charsets.jar"/>
+<entry path="C:\eclipse-luna\jre\lib\jfr.jar"/>
+<entry path="C:\eclipse-luna\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\eclipse-luna\jre\lib\ext"/>
+<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\eclipse-luna\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+</libraryInfos>
